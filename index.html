@@ -59,7 +59,7 @@ g/TR/html4/loose.dtd">
                         <h1 class="banner3_h1">
                         <div class="banner3">
                         <a href="http://www.gccaz.edu/" target="_blank">
-                        <img class="logo" src="https://pbs.twimg.com/profile_images/913063453765517313/GcCFGbXg_400x400.jpg"alt="GCC Logo &#8226; Biotech"/> 
+                        <img class="logo" src="gcc_logo_red_wht_400x400.jpg"alt="GCC Logo &#8226; Biotech"/> <!--https://pbs.twimg.com/profile_images/913063453765517313/GcCFGbXg_400x400.jpg -->
                         </a>
                         <!-- begin nav menu --> 
                         <div class="menu">
@@ -227,17 +227,17 @@ g/TR/html4/loose.dtd">
                         <br>
                         <br>
                         <p class="listit">
-                        <a href="http://glendalecommunitycollege.wordpress.com/" target="_blank" style="color:#CA333A;; text-decoration:none; font-size:12px;">Find out what's happening here</a> 
+                        <a class="exp_list" href="http://glendalecommunitycollege.wordpress.com/" target="_blank" style="color:#CA333A;; text-decoration:none; font-size:12px;">See what's happening here</a> 
                         </p>
                         <br>
                         <br>
                         <br>
                         <div align="center" style="font-size:16px; font-family:Arial, Helvetica, sans-serif; color:#24365b;"> 
-                        visit GCC on <a href="https://www.facebook.com/GCCaz" target="_blank"><img src="https://gallery.mailchimp.com/b8887df6cadff405cb7c84abc/images/b1e3e622-8344-4227-9ec9-f26d9d6706a3.png" width="25" height="25" alt="" align="center" style="align:center; margin-bottom:10px; margin-left:5px;"></a>
-                        <a href="https://twitter.com/GCCaz" target="_blank"><img src="https://gallery.mailchimp.com/b8887df6cadff405cb7c84abc/images/026956ce-49d0-40b2-8c96-6db1cd0e5f03.png" width="25" height="25" alt="" align="center" style="align:center; margin-left:5px; margin-right:5px; margin-bottom:10px;"></a>
-                        <a href="http://glendalecommunitycollege.wordpress.com/" target="_blank"><img src="https://gallery.mailchimp.com/b8887df6cadff405cb7c84abc/images/87e7624f-0e7b-4c47-ad4f-db5b808b8380.png" width="25" height="25" alt="" align="center" style="align:center; margin-left:0px; margin-right:5px; margin-bottom:10px;"></a>
+                        visit us on <a class="social1" href="https://www.facebook.com/GCCaz" target="_blank"><img src="https://gallery.mailchimp.com/b8887df6cadff405cb7c84abc/images/b1e3e622-8344-4227-9ec9-f26d9d6706a3.png" width="25" height="25" alt="" align="center" style="align:center; margin-bottom:10px; margin-left:5px;"></a>
+                        <a class="social2" href="https://twitter.com/GCCaz" target="_blank"><img id="social" src="https://gallery.mailchimp.com/b8887df6cadff405cb7c84abc/images/026956ce-49d0-40b2-8c96-6db1cd0e5f03.png" width="25" height="25" alt="" align="center" style="align:center; margin-left:5px; margin-right:5px; margin-bottom:10px;"></a>
+                        <a class="social3" href="http://glendalecommunitycollege.wordpress.com/" target="_blank"><img id="social" src="https://gallery.mailchimp.com/b8887df6cadff405cb7c84abc/images/87e7624f-0e7b-4c47-ad4f-db5b808b8380.png" width="25" height="25" alt="" align="center" style="align:center; margin-left:0px; margin-right:5px; margin-bottom:10px;"></a>
                         </div>
-                        <a href="https://www.gccaz.edu" target="_blank" style="color: #ffffff;">&copy; 2017 Glendale Community College (AZ)</a>
+                        <a href="https://www.gccaz.edu" target="_blank" style="color: #ffffff;">&copy; 2017 Glendale Community College <br> &nbsp; &nbsp; </a>
                         </div>
                         </td>
                         </tr>
@@ -498,9 +498,9 @@ table tr.banner td {
 .banner-bg {
     position: fixed;
     /*background: url('clouds4_1920_1285.jpg');*/
-    background: url('sedona_mtns6.jpg'); /*transparent; /*#000000;*/
+    background: url('biotech_skull_1900x1258.jpg'); /* sedona_mtns6.jpg transparent; /*#000000;*/
     background-position: 0px 0px;
-    background-size: 100% 100%;
+    background-size: cover; /*100% 100%*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
@@ -572,17 +572,20 @@ code a:hover {
 
 .copywright_div {
     position: absolute;
-    width: 300px;
+    width: 250px;
     height: 110px;
     background-color: #ffffff;
     border-radius: 10px;
     opacity: 0.67;
     z-index: 3;
+    bottom: 20px;
+    left:5px;
+    box-shadow: 1px 1px 3px 0.2px rgba(0,0,0, 0.5);
 }
 
 .copywright_div p {
     position: absolute;
-    left: 40px;
+    left: 10px;
     z-index: 3;
 }
 /*
@@ -1228,6 +1231,13 @@ p.lt {
     */
 }
 
+#social {
+    /*ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#000')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#000')";
+    filter: drop-shadow(0px 0.2px 0.2px rgba(0,0,0,1));
+    */
+}
+
 .social_bg {  /*Inside upcoming events label div*/
     height: 100px;
     width: 0px;
@@ -1250,9 +1260,9 @@ p.lt {
 
 .social1 img:hover {
     transition: all .2s ease-in-out;
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 .social2 {  /*Inside upcoming events label div*/
@@ -1264,9 +1274,9 @@ p.lt {
 
 .social2 img:hover {
     transition: all .2s ease-in-out;
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 .social3 {  /*Inside upcoming events label div*/
@@ -1279,9 +1289,9 @@ p.lt {
 
 .social3 img:hover {
     transition: all .2s ease-in-out;
-    transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
 }
 
 table {
